@@ -8,7 +8,7 @@
   "description": "A Phaser 3 Project Test",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --config webpack/prod.js ",
+    "build": "webpack --config prod.js ",
     "start1": "webpack-dev-server --config webpack/base.js --open",
     "start": "npm run build && webpack-dev-server --host=0.0.0.0 --port=$PORT --disable-host-check"
   },
