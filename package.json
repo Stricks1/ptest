@@ -9,7 +9,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start1": "webpack-dev-server --config webpack/base.js --open",
+    "start": "npm run build && webpack-dev-server --host=0.0.0.0 --port=$PORT"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "phaser": "^3.20.1"
-  }
+  },
+  "heroku-run-build-script": true
 }
